@@ -1,0 +1,15 @@
+$def with(movies) 
+<head>
+<meta charset="utf-8">
+</head>
+
+<h1>Crossion's Movie Site</h1>
+
+$for movie in movies:
+	<li>
+		$movie[0],$movie[1],$movie[2]
+		<br />
+		$movie[3]
+		<br />
+		<br />
+	</li>

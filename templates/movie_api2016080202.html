@@ -1,0 +1,16 @@
+$def with (movie)
+<h4><a href="/">返回首页</a></h4>
+$for movie1 in movie:
+	<h1>$movie1[1]</h1>
+	<img src="/static/poster/$(movie1[0]).jpg">
+	<hr>	
+	<p>原名：$movie1[2]</p>
+	<p>链接：$movie1[3]</p>
+	<p>评分：$movie1[4]</p>
+	<p>海报图片地址：$movie1[5]</p>
+	<p>导演：$movie1[6]</p>
+	<p>主演：$movie1[7]</p>
+	<p>年代：$movie1[8]</p>
+	<p>类型：$movie1[9]</p>
+	<p>制片国家/地区：$movie1[10]</p>
+	<p>简介：$movie1[11]</p>

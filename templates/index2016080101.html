@@ -1,0 +1,13 @@
+$def with(movies) 
+<h4>欢迎来到</h4>
+<h1>Crossin's Movie Site</h1>
+<hr>
+<form action="/" method='post'>   <!-- action是请求的地址  -->
+	<input type='text' name='title'/>
+	<input type='submit' value='搜索'/>  <!-- submit是请求的地址  -->
+</form>
+<p>影片列表：</p>
+$for movie1 in movies:
+	<li>
+		<a href="movie/$movie1[0]">$movie1[1]</a> <!-- movie一定与py文件中url中的一致，与构建的类名一致  -->
+	</li>
